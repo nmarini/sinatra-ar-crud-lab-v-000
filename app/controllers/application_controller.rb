@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
 
   post '/posts' do
     @post = Post.create(params)
-    erb :show
+    redirect to '/posts'
   end
 
   get '/posts/new' do
