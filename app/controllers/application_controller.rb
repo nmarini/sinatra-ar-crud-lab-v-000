@@ -40,8 +40,8 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/post/:id' do
-    binding.pry
-    @post = Post.find_by_id(params[])
+
+    @post = Post.find_by_id(params[:id])
 
     erb :edit
   end
