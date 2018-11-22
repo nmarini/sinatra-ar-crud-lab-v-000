@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/post/:id/edit' do
-    
+
     erb :edit
   end
 
