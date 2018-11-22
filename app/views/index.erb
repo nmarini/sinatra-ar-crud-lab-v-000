@@ -1,7 +1,9 @@
-<% @posts.each.with_index(1) do |post, index| %>
+<ol>
+<% @posts.each do |post| %>
 
-  <ul>
-    <li><%= index %></li>
-  </ul>
+
+    <li><%=  post.name %></li>
+
 
 <% end %>
+</ol>
