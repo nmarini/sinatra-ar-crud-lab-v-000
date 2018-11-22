@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
   patch '/post/:id' do
     binding.ry
     @post = Post.find_by_id(params[])
-    
+
     erb :edit
   end
 end
